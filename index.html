@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Blackjack</title>
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="screen">
+    <header class="zone bank">
+      <div class="zone-inner">
+        <div class="label">Banco</div>
+        <div id="dealer-cards" class="cards"></div>
+        <div id="dealer-value" class="value"></div>
+      </div>
+    </header>
+
+    <main class="zone player">
+      <div class="zone-inner">
+        <div class="label">Giocatore</div>
+        <div id="player-cards" class="cards"></div>
+        <div id="player-value" class="value"></div>
+      </div>
+    </main>
+
+    <nav class="zone controls">
+      <div class="zone-inner controls-inner">
+        <div id="message" class="message"></div>
+        <button id="hit" class="btn primary">
+          <span class="big">HIT</span>
+          <span class="small">(Pesca una carta)</span>
+        </button>
+        <button id="stand" class="btn secondary">STAND</button>
+        <button id="new" class="btn neutral">Nuova partita</button>
+      </div>
+    </nav>
+  </div>
+
+<script src="main.js"></script>
+</body>
+</html>
